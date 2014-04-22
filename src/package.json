@@ -1,0 +1,26 @@
+{
+  "name": "blog",
+  "version": "0.0.1",
+  "description": "rulee's personal blog system",
+  "main": "index.js",
+  "scripts": {
+    "test": "test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/ruleechen/blog.git"
+  },
+  "keywords": [
+    "blog",
+    "node"
+  ],
+  "author": "rulee",
+  "license": "GPL-v3",
+  "bugs": {
+    "url": "https://github.com/ruleechen/blog/issues"
+  },
+  "homepage": "https://github.com/ruleechen/blog",
+  "devDependencies": {
+    "gulp": "~3.6.1"
+  }
+}
