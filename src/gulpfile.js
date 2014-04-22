@@ -86,15 +86,15 @@ gulp.task('clean', function() {
 // watch
 gulp.task('watch', function () {
   var paths = {
-    scripts: ['js/**/*.js'],
-    styles: ['css/**/*.less', 'css/**/*.css']
+    js: ['js/**/*.js'],
+    css: ['css/**/*.less', 'css/**/*.css']
   };
   server.listen(35729, function (err) {
     if (err) {
-      return console.log(err)
-    };
-    gulp.watch(paths.scripts, ['js']);
-    gulp.watch(paths.styles, ['css']);
+      return console.log(err);
+    }
+    gulp.watch(paths.js, ['js']);
+    gulp.watch(paths.css, ['css']);
   });
 });
 
