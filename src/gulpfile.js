@@ -31,7 +31,7 @@ gulp.task('js-min', function () {
   gulp
     .src('js/main.js')
     .pipe(browserify({
-      insertGlobals : true,
+      insertGlobals : false,
       debug : false
     }))
     .pipe(concat('bundle.js'))
