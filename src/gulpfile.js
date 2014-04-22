@@ -8,15 +8,15 @@ var gulp = require('gulp');
     rename = require('gulp-rename'),
     minifycss = require('gulp-minify-css'),
     livereload = require('gulp-livereload'),
-    lr = require('tiny-lr'),
     ngmin = require('gulp-ngmin'),
+    lr = require('tiny-lr'),
     server = lr();
 
 
 // js
 gulp.task('js', function(){
   gulp
-    .src('js/app.js')
+    .src('js/main.js')
     .pipe(browserify({
       insertGlobals : true,
       debug : true
@@ -29,7 +29,7 @@ gulp.task('js', function(){
 // js min
 gulp.task('js-min', function () {
   gulp
-    .src('js/app.js')
+    .src('js/main.js')
     .pipe(browserify({
       insertGlobals : true,
       debug : false

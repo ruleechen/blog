@@ -2,7 +2,7 @@
   "name": "blog",
   "version": "0.0.1",
   "description": "rulee's personal blog system",
-  "main": "index.js",
+  "main": "js/main.js",
   "scripts": {
     "test": "test"
   },
