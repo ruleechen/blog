@@ -101,8 +101,3 @@ gulp.task('watch', function () {
 
 // default task
 gulp.task('default', ['watch']);
-
-
-// run
-gulp.run('js');
-gulp.run('css');
