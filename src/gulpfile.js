@@ -9,6 +9,7 @@ var gulp = require('gulp');
     minifycss = require('gulp-minify-css'),
     livereload = require('gulp-livereload'),
     ngmin = require('gulp-ngmin'),
+    plumber = require('gulp-plumber'),
     lr = require('tiny-lr'),
     server = lr();
 
@@ -30,6 +31,9 @@ gulp.task('js', function(){
 gulp.task('js-min', function () {
   gulp
     .src('js/main.js')
+    .pipe(plumber({
+      errorHandler: function(err) { console.log(err); }
+    }))
     .pipe(browserify({
       insertGlobals : false,
       debug : false
@@ -45,6 +49,9 @@ gulp.task('js-min', function () {
 gulp.task('css', function () {
   gulp
     .src('css/main.sass')
+    .pipe(plumber({
+      errorHandler: function(err) { console.log(err); }
+    }))
     .pipe(sass({
       sourceMap: true
     }))
