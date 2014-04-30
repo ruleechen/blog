@@ -1,6 +1,7 @@
 var gulp = require('gulp');
     browserify = require('gulp-browserify'),
-    // notify = require('gulp-notify'),
+    plumber = require('gulp-plumber'),
+    notify = require('gulp-notify'),
     uglify = require('gulp-uglify'),
     concat = require('gulp-concat'),
     clean = require('gulp-clean'),
@@ -9,7 +10,6 @@ var gulp = require('gulp');
     minifycss = require('gulp-minify-css'),
     livereload = require('gulp-livereload'),
     ngmin = require('gulp-ngmin'),
-    plumber = require('gulp-plumber'),
     lr = require('tiny-lr'),
     server = lr();
 
@@ -32,7 +32,7 @@ gulp.task('js-min', function () {
   gulp
     .src('js/main.js')
     .pipe(plumber({
-      errorHandler: function(err) { console.log(err); }
+      errorHandler: notify.onError("js error: <%= error.message %>")
     }))
     .pipe(browserify({
       insertGlobals : false,
@@ -50,7 +50,7 @@ gulp.task('css', function () {
   gulp
     .src('css/main.sass')
     .pipe(plumber({
-      errorHandler: function(err) { console.log(err); }
+      errorHandler: notify.onError("css error: <%= error.message %>")
     }))
     .pipe(sass({
       sourceMap: true
