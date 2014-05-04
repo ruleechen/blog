@@ -6,5 +6,5 @@
 
 var name = module.exports.name = 'Blog.dataService';
 
-var services = angular.module(name, [])
+angular.module(name, [])
 .factory('Blogs', require('./blog-service'));

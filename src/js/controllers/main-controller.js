@@ -4,7 +4,7 @@
 * create date: 2014.5.4
 */
 
-module.exports = ['$scope', '$rootScope', '$window', '$location', function ($scope, $rootScope, $window, $location) {
+module.exports = ['$scope', '$rootScope', '$window', '$location', 'testService', 'testFactory', 'testProvider', function ($scope, $rootScope, $window, $location, testService, testFactory, testProvider) {
     $scope.slide = '';
     $rootScope.back = function () {
         $scope.slide = 'slide-right';
@@ -14,4 +14,14 @@ module.exports = ['$scope', '$rootScope', '$window', '$location', function ($sco
         $scope.slide = 'slide-left';
         $location.url(path);
     };
+    var testEnabled = true;
+    if (testEnabled) {
+    	$rootScope.testEnabled = testEnabled;
+        debugger;
+    	$rootScope.tests = {
+    		factory: testFactory.label(),
+    		service: testService.label,
+    		provider: testProvider
+    	};
+    }
 }];

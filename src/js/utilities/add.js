@@ -6,7 +6,7 @@
 
 var name = module.exports.name = 'Blog.utilities';
 
-module.exports = angular.module(name, [])
+angular.module(name, [])
 .constant('utils', {
 	padLeft: require('./pad-left'),
 	padRight: require('./pad-right')

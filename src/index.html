@@ -10,5 +10,10 @@
 <body ng-controller="MainCtrl">
     <div id="body-container" ng-view ng-class="slide">
     </div>
+    <div ng-show="testEnabled">
+    	<div>{{tests.service}}</div>
+    	<div>{{tests.factory}}</div>
+    	<div>{{tests.provider}}</div>
+    </div>
 </body>
 </html>
