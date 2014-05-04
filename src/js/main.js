@@ -8,7 +8,6 @@
 
 var libraries = require('./libraries/add');
 var utilities = require('./utilities/add');
-//var directives =  require('./directives/add');
 var dataService = require('./dataservice/add');
 var controllers = require('./controllers/add');
 var tests = require('./tests/add');
@@ -18,7 +17,6 @@ var blog = angular.module('Blog', [
     'ngRoute',
     'ngAnimate',
     utilities.name,
-//    directives.name,
     dataService.name,
     controllers.name
 ].concat(tests));
