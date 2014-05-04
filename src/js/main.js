@@ -11,7 +11,7 @@ var utilities = require('./utilities/add');
 //var directives =  require('./directives/add');
 var dataService = require('./dataservice/add');
 var controllers = require('./controllers/add');
-var tests = require('./tests/add')
+var tests = require('./tests/add');
 
 var blog = angular.module('Blog', [
     'ngTouch',
@@ -20,9 +20,8 @@ var blog = angular.module('Blog', [
     utilities.name,
 //    directives.name,
     dataService.name,
-    controllers.name,
-    tests.name
-]);
+    controllers.name
+].concat(tests));
 
 blog.config(['$routeProvider', function ($routeProvider) {
     $routeProvider.when('/home', { templateUrl: 'views/home.html', controller: 'HomeCtrl' });

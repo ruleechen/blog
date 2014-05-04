@@ -17,11 +17,10 @@ module.exports = ['$scope', '$rootScope', '$window', '$location', 'testService',
     var testEnabled = true;
     if (testEnabled) {
     	$rootScope.testEnabled = testEnabled;
-        debugger;
     	$rootScope.tests = {
+            provider: testProvider,
     		factory: testFactory.label(),
-    		service: testService.label,
-    		provider: testProvider
+    		service: testService.label
     	};
     }
 }];
