@@ -23,6 +23,6 @@ var blog = angular.module('Blog', [
 ]);
 
 blog.config(['$routeProvider', function ($routeProvider) {
-    $routeProvider.when('/home', { templateUrl: 'views/home.html', controller: 'HomeCtl' });
+    $routeProvider.when('/home', { templateUrl: 'views/home.html', controller: 'HomeCtrl' });
     $routeProvider.otherwise({ redirectTo: '/home' });
 }]);

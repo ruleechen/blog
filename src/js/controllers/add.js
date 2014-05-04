@@ -7,5 +7,5 @@
 var name = module.exports.name = 'Blog.controllers';
 
 var ctls = angular.module(name, [])
-.controller('MainCtl', require('./main-controller'))
-.controller('HomeCtl', require('./home-controller'));
+.controller('MainCtrl', require('./main-controller'))
+.controller('HomeCtrl', require('./home-controller'));
