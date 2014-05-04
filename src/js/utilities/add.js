@@ -9,5 +9,6 @@ var name = module.exports.name = 'Blog.utilities';
 angular.module(name, [])
 .constant('utils', {
 	padLeft: require('./pad-left'),
-	padRight: require('./pad-right')
+	padRight: require('./pad-right'),
+	viewUrl: require('./view-url')
 });
