@@ -53,7 +53,7 @@ gulp.task('css', function () {
       errorHandler: notify.onError("css error: <%= error.message %>")
     }))
     .pipe(sass({
-      sourceMap: true
+      sourceMap: false
     }))
     .pipe(concat('bundle.css'))
     .pipe(gulp.dest('./dist/css'))
