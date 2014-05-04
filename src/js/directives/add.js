@@ -5,3 +5,6 @@
 */
 
 var name = module.exports.name = 'Blog.directives';
+
+angular.module(name, [])
+.directive('blogHeader', require('./header'));
