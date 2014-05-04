@@ -10,5 +10,7 @@ angular.module(name, [])
 .constant('utils', {
 	padLeft: require('./pad-left'),
 	padRight: require('./pad-right'),
-	viewUrl: require('./view-url')
+	viewUrl: require('./view-url'),
+	readObj: require('./read-obj'),
+	i18n: require('./i18n')
 });
