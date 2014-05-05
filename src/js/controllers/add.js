@@ -4,7 +4,7 @@
 * create date: 2014.5.4
 */
 
-var name = module.exports.name = 'Blog.controllers';
+var name = module.exports.name = 'Bloga.controllers';
 
 angular.module(name, [])
 .controller('MainCtrl', require('./main-controller'))

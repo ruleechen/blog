@@ -13,7 +13,7 @@ var dataService = require('./dataservice/add');
 var controllers = require('./controllers/add');
 var tests = require('./tests/add');
 
-var blog = angular.module('Blog', [
+var bloga = angular.module('Bloga', [
     'ngTouch',
     'ngRoute',
     'ngAnimate',
@@ -23,7 +23,7 @@ var blog = angular.module('Blog', [
     controllers.name
 ].concat(tests));
 
-blog.config(['$routeProvider', 'utils', function ($routeProvider, utils) {
+bloga.config(['$routeProvider', 'utils', function ($routeProvider, utils) {
     $routeProvider.when('/home', { templateUrl: utils.viewUrl('views/home.html'), controller: 'HomeCtrl' });
     $routeProvider.otherwise({ redirectTo: '/home' });
 }]);

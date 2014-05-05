@@ -1,5 +1,5 @@
 {
-  "name": "blog",
+  "name": "bloga",
   "version": "0.0.1",
   "description": "rulee's personal blog system",
   "main": "js/main.js",
@@ -8,7 +8,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/ruleechen/blog.git"
+    "url": "https://github.com/ruleechen/bloga.git"
   },
   "keywords": [
     "blog",
@@ -17,9 +17,9 @@
   "author": "rulee",
   "license": "GPL-v3",
   "bugs": {
-    "url": "https://github.com/ruleechen/blog/issues"
+    "url": "https://github.com/ruleechen/bloga/issues"
   },
-  "homepage": "https://github.com/ruleechen/blog",
+  "homepage": "https://github.com/ruleechen/bloga",
   "devDependencies": {
     "tiny-lr": "0.0.5",
     "gulp": "~3.6.1",

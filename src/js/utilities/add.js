@@ -4,7 +4,7 @@
 * create date: 2014.5.4
 */
 
-var name = module.exports.name = 'Blog.utilities';
+var name = module.exports.name = 'Bloga.utilities';
 
 angular.module(name, [])
 .constant('utils', {
