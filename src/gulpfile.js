@@ -96,7 +96,7 @@ gulp.task('watch', function () {
     js: ['js/**/*.js'],
     css: ['css/**/*.sass', 'css/**/*.css']
   };
-  server.listen(35730, function (err) {
+  server.listen(35729, function (err) {
     if (err) {
       return console.log(err);
     }
