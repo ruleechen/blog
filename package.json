@@ -2,9 +2,9 @@
   "name": "bloga",
   "version": "0.0.1",
   "description": "rulee's personal blog system",
-  "main": "js/main.js",
+  "main": "app.js",
   "scripts": {
-    "test": "test"
+	"start": "node app.js",
   },
   "repository": {
     "type": "git",
@@ -20,6 +20,7 @@
     "url": "https://github.com/ruleechen/bloga/issues"
   },
   "homepage": "https://github.com/ruleechen/bloga",
+  "dependencies": {},
   "devDependencies": {
     "tiny-lr": "0.0.5",
     "gulp": "~3.6.1",
