@@ -5,8 +5,8 @@ JavaScript Language Rules
 + Javascript coding guideline for rb2 woodpecker project team
 
 #####References#####
-+ https://google-styleguide.googlecode.com/svn/trunk/javascriptguide.xml
 + https://github.com/airbnb/javascript/blob/master/README.md
++ https://google-styleguide.googlecode.com/svn/trunk/javascriptguide.xml
 
 Variables
 ---------
