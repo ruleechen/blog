@@ -31,29 +31,6 @@ As visual studio is our most major IDE in javascript coding. We recommend useing
 
 Comments
 -----------
-+ All javascript file should be commented with main info of current file at the top line. Author/CreateDate/Description etc.
+Use [JSDoc](http://code.google.com/p/jsdoc-toolkit/)
 
-```javascript
-/**
- * A comment should begin with a slash and 2 asterisks.
- * Inline tags should be enclosed in braces like {@code this}.
- * @desc Block tags should always start on their own line.
- * author: xxxx
- * create date: 2014.07.31
- */
-```
-
-+ Functions comment format
-
-```javascript
-/**
- * This the method description
- * @param {string} foo This is a param with a description too long to fit in
- *                     one line.
- * @return {number} This returns something that has a description too long to
- *                  fit in one line.
- */
-var method = function(foo) {
-    return 5;
-};
-```
+> All files, classes, main methods and main properties should be documented with [JSDoc](http://code.google.com/p/jsdoc-toolkit/) comments with the appropriate [tags](https://google-styleguide.googlecode.com/svn/trunk/javascriptguide.xml#JSDoc_Tag_Reference) and [types](https://google-styleguide.googlecode.com/svn/trunk/javascriptguide.xml#JsTypes). Textual descriptions for properties, methods, method parameters and method return values should be included unless obvious from the property, method, or parameter name. Inline comments should be of the // variety.
