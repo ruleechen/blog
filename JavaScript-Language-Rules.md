@@ -82,16 +82,25 @@ function foo() {
 
 Function Declarations Within Blocks
 ----------------------------------------
+Use a variable initialized with a Function Expression to define a function within a block.
+
 > While most script engines support Function Declarations within blocks it is not part of ECMAScript (see [ECMA-262](http://www.ecma-international.org/publications/standards/Ecma-262.htm), clause 13 and 14). Worse implementations are inconsistent with each other and with future EcmaScript proposals. ECMAScript only allows for Function Declarations in the root statement list of a script or function. Instead use a variable initialized with a Function Expression to define a function within a block:
 
 ```javascript
 // bad
 if (x) {
-  function foo() {}
+  function foo() { }
 }
 
 // good
 if (x) {
-  var foo = function() {};
+  var foo = function() { };
 }
 ```
+
+with() {}
+-------------
+**Don't** use with.
+
+> Using with clouds the semantics of your program. Because the object of the with can have properties that collide with local variables, it can drastically change the meaning of your program.
+
