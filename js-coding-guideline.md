@@ -6,6 +6,7 @@ Javascript coding guideline
 
 #####References#####
 + https://google-styleguide.googlecode.com/svn/trunk/javascriptguide.xml
++ https://github.com/airbnb/javascript/blob/master/README.md
 
 Variables
 ---------
@@ -35,8 +36,8 @@ var o = {};
 var a = [item1, item2, item3];
 ```
 
-Strings
------------
+String quotes
+---------------
 Javascript support both ' and " as string quote. But please prefer ' over "
 > For consistency single-quotes (') are preferred to double-quotes ("). This is helpful when creating strings that include HTML
 
@@ -48,4 +49,33 @@ var str2 = "<input type=\"text\" />";
 // good
 var str1 = 'a';
 var str2 = '<input type="text" />';
+```
+
+Semicolons
+------------
+Always use semicolons.
+
+> Below example there are a couple places where missing semicolons are particularly dangerous. Make sure your assignments end with semicolons. And please note that semicolons should be included at the end of function expressions, but not at the end of function declarations.
+
+```javascript
+// bad
+var myMethod = function() {
+  return true;
+}  // No semicolon here
+var x = {
+  'a': 1,
+  'b': 2
+}  // No semicolon here
+
+// good
+var foo = function() {
+  return true;
+};  // semicolon here
+var x = {
+  'a': 1,
+  'b': 2
+};  // semicolon here
+function foo() {
+  return true;
+}  // no semicolon here
 ```
