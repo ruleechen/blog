@@ -34,3 +34,18 @@ var a = new Array(item1, item2, item3);
 var o = {};
 var a = [item1, item2, item3];
 ```
+
+Strings
+-----------
+Javascript support both ' and " as string quote. But please prefer ' over "
+> For consistency single-quotes (') are preferred to double-quotes ("). This is helpful when creating strings that include HTML
+
+```javascript
+// bad
+var str1 = "a";
+var str2 = "<input type=\"text\" />";
+
+// good
+var str1 = 'a';
+var str2 = '<input type="text" />';
+```
