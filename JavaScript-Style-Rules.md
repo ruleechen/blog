@@ -33,6 +33,6 @@ As visual studio is our most major IDE in javascript coding. We recommend useing
 
 Comments
 -----------
-Use [JSDoc](http://code.google.com/p/jsdoc-toolkit/)
+Use [JSDoc](http://usejsdoc.org/)
 
-> All files, classes, main methods and main properties should be documented with [JSDoc](http://code.google.com/p/jsdoc-toolkit/) comments with the appropriate [tags](https://google-styleguide.googlecode.com/svn/trunk/javascriptguide.xml#JSDoc_Tag_Reference) and [types](https://google-styleguide.googlecode.com/svn/trunk/javascriptguide.xml#JsTypes). Textual descriptions for properties, methods, method parameters and method return values should be included unless obvious from the property, method, or parameter name. Inline comments should be of the // variety.
+> All files, classes, main methods and main properties should be documented with [JSDoc](http://usejsdoc.org/) comments with the appropriate tags and types. Textual descriptions for properties, methods, method parameters and method return values should be included unless obvious from the property, method, or parameter name. Inline comments should be of the // variety.
