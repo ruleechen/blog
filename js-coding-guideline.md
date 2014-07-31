@@ -4,6 +4,9 @@ Javascript coding guideline
 + Ronglin Chen
 + Javascript coding guideline for rb2 woodpecker project team
 
+#####References#####
++ https://google-styleguide.googlecode.com/svn/trunk/javascriptguide.xml
+
 Variables
 ---------
 Declarations with **var** always
