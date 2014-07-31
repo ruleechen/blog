@@ -25,7 +25,7 @@ Note more:
 + Protected properties and methods should be named without a trailing underscore (like public ones).
 + Filenames should be all lowercase in order to avoid confusion on case-sensitive platforms. Filenames should end in .js, and should contain no punctuation except for - or _ (prefer - to _).
 
-Code formatting
+Formatting
 -----------------------
 As visual studio is our most major IDE in javascript coding. We recommend useing the visual studio javascript editor default style. Format the opening javascript file by compose shortcur **CTRL+K  CTRL+D**.
 
