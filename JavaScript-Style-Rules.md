@@ -31,7 +31,6 @@ Use the visual studio javascript editor default style. Format the opening javasc
 
 Comments
 -----------
-
 + All javascript file should be commented with main info of current file at the top line. Author/CreateDate/Description etc.
 
 ```javascript
