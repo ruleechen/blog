@@ -42,3 +42,18 @@ Comments
  * create date: 2014.07.31
  */
 ```
+
++ Functions comment format
+
+```javascript
+/**
+ * This the method description
+ * @param {string} foo This is a param with a description too long to fit in
+ *                     one line.
+ * @return {number} This returns something that has a description too long to
+ *                  fit in one line.
+ */
+var method = function(foo) {
+    return 5;
+};
+```
