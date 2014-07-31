@@ -38,7 +38,7 @@ var a = [item1, item2, item3];
 
 String quotes
 ---------------
-Javascript support both ' and " as string quote. But please prefer ' over "
+Javascript support both ' and " as string quote. But please prefer ' over ".
 > For consistency single-quotes (') are preferred to double-quotes ("). This is helpful when creating strings that include HTML
 
 ```javascript
@@ -78,4 +78,20 @@ var x = {
 function foo() {
   return true;
 }  // no semicolon here
+```
+
+Function Declarations Within Blocks
+----------------------------------------
+> While most script engines support Function Declarations within blocks it is not part of ECMAScript (see [ECMA-262](http://www.ecma-international.org/publications/standards/Ecma-262.htm), clause 13 and 14). Worse implementations are inconsistent with each other and with future EcmaScript proposals. ECMAScript only allows for Function Declarations in the root statement list of a script or function. Instead use a variable initialized with a Function Expression to define a function within a block:
+
+```javascript
+// bad
+if (x) {
+  function foo() {}
+}
+
+// good
+if (x) {
+  var foo = function() {};
+}
 ```
