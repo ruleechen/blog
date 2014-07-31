@@ -5,8 +5,8 @@ JavaScript Style Rules
 + Javascript coding guideline for rb2 woodpecker project team
 
 #####References#####
-+ https://google-styleguide.googlecode.com/svn/trunk/javascriptguide.xml
 + https://github.com/airbnb/javascript/blob/master/README.md
++ https://google-styleguide.googlecode.com/svn/trunk/javascriptguide.xml
 
 Naming
 --------
@@ -36,6 +36,3 @@ Comments
 Use [JSDoc](http://code.google.com/p/jsdoc-toolkit/)
 
 > All files, classes, main methods and main properties should be documented with [JSDoc](http://code.google.com/p/jsdoc-toolkit/) comments with the appropriate [tags](https://google-styleguide.googlecode.com/svn/trunk/javascriptguide.xml#JSDoc_Tag_Reference) and [types](https://google-styleguide.googlecode.com/svn/trunk/javascriptguide.xml#JsTypes). Textual descriptions for properties, methods, method parameters and method return values should be included unless obvious from the property, method, or parameter name. Inline comments should be of the // variety.
-
-Tips and Tricks
----------------------
