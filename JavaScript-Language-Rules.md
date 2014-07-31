@@ -1,4 +1,4 @@
-Javascript coding guideline
+JavaScript Language Rules
 ==============================
 + Version: 0.1
 + Ronglin Chen
