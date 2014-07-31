@@ -27,7 +27,7 @@ Note more:
 
 Code formatting
 -----------------------
-Use the visual studio javascript editor default style. Format the opening javascript file by shortcur CTRL+K CTRL+D.
+Use the visual studio javascript editor default style. Format the opening javascript file by shortcur **CTRL+K CTRL+D**.
 
 Comments
 -----------
